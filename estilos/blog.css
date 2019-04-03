@@ -2,6 +2,11 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
+section img{
+    width: 100%;
+    max-width: 300px;
+}
+
 header{
     border-bottom: 1px solid #ccc;
     padding-top: 1em;
@@ -58,6 +63,8 @@ header li a{
 .styleprojetos li p{
     color:#fff;
     margin-top: 0.5em;
+    text-align:justify;
+    line-height: 1.2; 
 }
 
 .escuras{
@@ -71,6 +78,14 @@ header li a{
     color: #2b313e;
 }
 
+.projetos-header{
+    float:left;
+}
+
+.styleprojetos{
+    margin-left: 40%;
+}
+
 .styleprojetos li{
     background-color:#6f768b;
     padding: 1em;
@@ -80,7 +95,7 @@ header li a{
 .styleprojetos li a{
     color: #ffffff;
     font-size: 1.3em;
-}
+}   
 
 #sobre p.text{
     margin: 1em;
@@ -89,7 +104,7 @@ header li a{
 #sobre p.bio{
     color: #579ff0;
     font-size: 1.5em;
-    margin: 1em.
+    margin: 1em;
 }
 
 #sobre img{
