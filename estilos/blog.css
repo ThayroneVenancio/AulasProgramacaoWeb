@@ -1,5 +1,13 @@
+*{
+    box-sizing: border-box; /*ADICIONAR O EFEITO GERAL*/
+}
+
 body{
     font-family: Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 section img{
@@ -11,6 +19,19 @@ header{
     border-bottom: 1px solid #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: fixed; /*posição fixa na tela*/
+    width: 100%;
+    height: 3em;
+}
+
+header ul{
+    text-align: right /*alinhar o texto a direita*/
+}
+
+header li a{
+    color: #99a0b0;
+    font-weight: lighter; /*TAMANHO DA LETRA*/
+    text-transform: uppercase;
 }
 
 header li{
@@ -31,12 +52,13 @@ header li{
 section{
     padding-top: 2em;
     padding-bottom: 2em;
+    text-align: center;
 }
 
 .identificacao{
     background-color: #579ff0;
     color: #fcfcfd;
-    padding: 7em 2em;
+    padding: 10em 2em 7em;
 
 }
 
@@ -99,16 +121,27 @@ header li a{
 
 #sobre p.text{
     margin: 1em;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 #sobre p.bio{
     color: #579ff0;
     font-size: 1.5em;
     margin: 1em;
+    width: 50%;
+}
+
+#sobre{
+    position: relative; /*posiçao rrelativa no sobre, pois vc colocou uma image absoluta*/
 }
 
 #sobre img{
     width: 200px;
+    position: absolute; /*colocar a imagem como absoluta*/
+    top:2em;
+    right:10%;
 }
 
 footer{
